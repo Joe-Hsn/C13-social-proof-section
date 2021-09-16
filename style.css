@@ -1,0 +1,166 @@
+@media (max-width: 1440px) and (min-width: 375px) {
+	width: 100%;
+}
+@charset "UTF-8";
+@font-face {
+	font-family: Spartan;
+	src: url(Spartan-VariableFont_wght.ttf);
+}
+:root {
+	--veryDarkMagenta: hsl(300, 43%, 22%);
+	--softPink: hsl(333, 80%, 67%);
+	--darkGrayishMagenta: hsl(303, 10%, 53%);
+	--lightGrayishMagenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Spartan;
+	width: 100%;
+	height: 100vh;
+	font-size: 15px;
+}
+.container {
+	width: 100%;
+	height: 95vh;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.one {
+	width: 50%;
+	padding: 3% 0 0 3%
+}
+.one h1 {
+	color: var(--veryDarkMagenta);
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+.two {
+	width: 50%;
+}
+.two div {
+	padding: 2%;
+	margin: 2%;
+	width: 60%;
+	background-color: var(--lightGrayishMagenta);
+}
+.two span {
+	margin-right: 3%;
+}
+.mrgn-r1 {
+    position: relative;
+    left: 50px;
+}
+.mrgn-r2 {
+	position: relative;
+    left: 100px;
+}
+.three {
+	width: 100%;
+	display: flex;
+    justify-content: space-evenly;
+}
+.card {
+	border-radius: 10px;
+	display: flex;
+    padding: 2%;
+    width: 30%;
+    background-color: var(--veryDarkMagenta);
+    color: var(--white);
+    flex-direction: column;
+}
+.card div {
+	display: flex;
+	margin-bottom: 5%;
+}
+.card span span {
+	color: var(--softPink);
+}
+.card img {
+	width: 12%;
+	border-radius: 50%;
+	margin-right: 5%;
+}
+.comment {	
+    width: 95%;
+}
+.mrgn-one {
+	position: relative;
+    top: 1.5em;
+}
+.mrgn-two {
+	position: relative;
+    top: 3em;
+}
+.attribution {
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	background-color: hsl(228, 45%, 44%);
+	border: .5px solid hsl(228, 45%, 44%, 0%);
+	color: white;
+	padding: .333333%;
+}
+.attribution a:hover {
+	background-color: white;
+	border: .5px solid hsl(228, 45%, 44%);
+	box-sizing: border-box;
+	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		height: 95vh;
+		display: flex;
+	    flex-wrap: wrap;
+	    align-items: center;
+	}
+	.one {
+	    width: 100%;
+	    margin: 0;
+	    padding: 5%;
+    	text-align: center;
+	}
+	.one h1 {
+		font-size: 2em;
+    	margin-bottom: 3%;
+	}
+	.two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.three {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		flex-wrap: wrap;
+	}
+	.mrgn-r1, .mrgn-r2 {
+		position: static;
+    }
+    .mrgn-one, .mrgn-two {
+		position: static;
+	}
+	.card {
+		width: 80%;
+    	margin-bottom: 3%;
+	}
+	.attribution {
+		position: relative;
+	    bottom: -100%;
+	    margin: 5% 0;
+	} 
+}
